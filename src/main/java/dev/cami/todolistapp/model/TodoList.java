@@ -19,6 +19,6 @@ public class TodoList {
     private UUID id;
     private String title;
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
-    @JoinColumn(name = "list_id")
+    @JoinColumn(name = "todoListId")
     private List<TodoItem> items = new ArrayList<>();
 }
