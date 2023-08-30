@@ -1,6 +1,6 @@
-package dev.cami.todolistapp.repository;
+package dev.wall.todolistapp.repository;
 
-import dev.cami.todolistapp.model.TodoList;
+import dev.wall.todolistapp.model.TodoList;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

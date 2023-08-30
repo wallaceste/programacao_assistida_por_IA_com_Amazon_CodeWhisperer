@@ -1,7 +1,7 @@
-package dev.cami.todolistapp.controller;
+package dev.wall.todolistapp.controller;
 
-import dev.cami.todolistapp.model.TodoList;
-import dev.cami.todolistapp.service.TodoListService;
+import dev.wall.todolistapp.model.TodoList;
+import dev.wall.todolistapp.service.TodoListService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

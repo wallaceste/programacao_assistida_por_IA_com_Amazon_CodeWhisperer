@@ -1,7 +1,7 @@
-package dev.cami.todolistapp.service;
+package dev.wall.todolistapp.service;
 
-import dev.cami.todolistapp.model.TodoList;
-import dev.cami.todolistapp.repository.TodoListRepository;
+import dev.wall.todolistapp.model.TodoList;
+import dev.wall.todolistapp.repository.TodoListRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

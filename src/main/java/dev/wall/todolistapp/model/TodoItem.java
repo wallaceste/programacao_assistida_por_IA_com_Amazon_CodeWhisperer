@@ -1,4 +1,4 @@
-package dev.cami.todolistapp.model;
+package dev.wall.todolistapp.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
