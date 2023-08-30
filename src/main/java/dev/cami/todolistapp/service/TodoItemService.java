@@ -31,7 +31,6 @@ public record TodoItemService(
         );
         todoItemToUpdate.setDescription(todoItem.getDescription());
         todoItemToUpdate.setCompleted(todoItem.isCompleted());
-        todoItemToUpdate.setTodoListId(todoItem.getTodoListId());
         return todoItemRepository.save(todoItemToUpdate);
     }
 
