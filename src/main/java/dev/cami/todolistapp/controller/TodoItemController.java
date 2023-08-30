@@ -17,8 +17,8 @@ public record TodoItemController(
     }
 
     @GetMapping("/{id}")
-    public TodoItem getTodoItem(@PathVariable UUID id) {
-        return todoItemService.getTodoItem(id);
+    public TodoItem getTodoItemById(@PathVariable UUID id) {
+        return todoItemService.getTodoItemById(id);
     }
 
     @PostMapping
