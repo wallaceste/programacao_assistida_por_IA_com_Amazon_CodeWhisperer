@@ -39,4 +39,9 @@ public record TodoItemService(
         todoItemRepository.deleteById(id);
     }
 
+    public TodoItem markTodoItemAsCompleted(UUID id) {
+        TodoItem existingTodoItem = getTodoItemById(id);
+        existingTodoItem.setCompleted(true);
+        return todoItemRepository.save(existingTodoItem);
+    }
 }

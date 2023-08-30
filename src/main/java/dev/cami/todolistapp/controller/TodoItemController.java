@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.UUID;
 
 @RestController
+@RequestMapping("/todo-items")
 public record TodoItemController(
         TodoItemService todoItemService
 ) {
@@ -34,5 +35,11 @@ public record TodoItemController(
     @DeleteMapping("delete/{id}")
     public void deleteTodoItem(@PathVariable UUID id) {
         todoItemService.deleteTodoItem(id);
+    }
+
+
+    @PatchMapping("/{id}/completed")
+    public TodoItem markTodoItemAsCompleted(@PathVariable UUID id) {
+        return todoItemService.markTodoItemAsCompleted(id);
     }
 }
